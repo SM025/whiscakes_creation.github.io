@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$light-blue: #2791cf;
+$light-grey: #7E878c;
+$dark-grey: #3f3f3f;
+$white: #ffffff;
+
+$font-text: 'Poppins', serif;
+$font-heading: 'Baloo 2', cursive;
+$font-size: 16px;
+
+@mixin flexing($fd,$jc,$ai){
+    display: flex;
+    flex-direction: $fd;
+    align-items: $jc;
+    justify-content: $ai;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+
+    header{
+        background-color: $light-blue;
+        color: $white;
+        padding: 7px 15px;
+        @include flexing(row, space-between, center);
+        div.title{
+           @include flexing(row, flex-start, center);
+            h1{
+                font-family: $font-heading;
+                font-size: 32px;
+                margin-left: 10px;
+                
+            }
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+
+    div.container{
+        background-color: #7E878c;
+        padding: 20px;
+    
+    div.users-window{
+        width: 350px;
+        color: #ffffff;
+        background-color: #3f3f3f;
+        padding: 15px 20px;
+        border-radius: 10px;
+        div.user-head{
+            @include flexing(row, space-between, center);
+        }
+    }
+}
+}
+
+

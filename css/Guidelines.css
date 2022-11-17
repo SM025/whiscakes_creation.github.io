@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{ 
+    margin: 0;
+  } 
+  .hero1{
+    height: 100vh;
+    background-image: url(../images/homee.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    background-attachment: fixed; 
+}
+
+.navigation2{
+    background-color: rgba(53, 9, 9, 0.418);
+    width: 1430px;
+    display: flex;
+    padding: 10px;
+    height: 60px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.navigation2 a:hover, .drop:hover .dropdown-content {
+    background-color:#e0ba85;
+  }
+.nav-links1 {
+    flex-wrap: wrap;
+
+}
+.nav-links1 ul{
+    margin-left: -0px;
+    display: inline;
+}
+.nav-links1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 20px;
+    margin-right: -0px;
+}
+.nav-links1 ul li a {
+    color: rgb(90, 54, 20);
+    padding: 10px 10px;
+    font-size: 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-links1 ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links1 ul li:hover::after{
+    width: 100%;
+}
+
+.vertical-bar{
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+.logo1 {
+    font-size: 35px;
+    max-height: 50px;
+    margin-left: -2px;
+    margin-top: 10px;
+    color: black;
+}
+
+span.w4-button.w4-display-topright {
+    display: block;
+    color: #fff;
+    margin: -10px 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+}
+
+span.w4-button.w4-display-topright:hover {
+ 
+    color: #6c4728;
+}   
+
+.log2 {
+    float: right;
+    overflow: hidden;
+    margin-right: 100px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+.nav-logo img{
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navigation2 .fa{
+    display: none;
+}
+.price-guidelines1 {
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #e0ba85;
+    margin-bottom: 100px;
+}
+.section-container
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+}
+.section-container .columns
+{
+flex:0 0 auto;
+width:50%;
+}
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+height: 300px;
+}
+.section-container .columns.image1
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+height: 300px;
+width: 570px;
+margin-top: -320px;
+margin-left: 570px;
+}
+.section-container .columns.content .content-container
+{
+padding:40px 50px;
+}
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:90px;
+}
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+margin-top: -40px;
+}
+.btn-cake{
+    background:#6c4728;
+    border: 2px solid #c38e43;
+    color: #e0ba85;
+    font-family: 'Rampart One' cursive;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position:relative;
+    align-items: center;
+    letter-spacing: 8px;
+    margin-left: 50px;
+}
+
+.btn-cake:hover{
+    border: 2px solid #6c4728;
+    color: #6c4728;
+    background: none;
+}
+.btn-cake::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 9, 9, 0.418);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn-cake::before{
+    transform: scaleY(0);
+}
+.btn-cake:hover::before{
+    transform: scaleY(1);
+}
+
+
+.btn-desserts{
+    background:#6c4728;
+    border: 2px solid #c38e43;
+    color: #e0ba85;
+    font-family: 'Rampart One' cursive;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position:relative;
+    align-items: center;
+    letter-spacing: 8px;
+    margin-left: 50px;
+}
+
+.btn-desserts:hover{
+    border: 2px solid #6c4728;
+    color: #6c4728;
+    background: none;
+}
+.btn-desserts::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 9, 9, 0.418);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn-desserts::before{
+    transform: scaleY(0);
+}
+.btn-desserts:hover::before{
+    transform: scaleY(1);
+}
+.navigation .fa {
+    margin-right: 8px;
+}
+@media (max-width: 700px){
+    body {
+        margin: 0;
+    }
+    .navigation2{
+        height: 10px;
+        padding: 30px 20px;
+    }
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 10px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    .navigation2 .fa{
+        display: block;
+        color: #fff;
+        margin: -10px 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-links1{
+        height: 300vh;
+        width: 200px;
+        background: #7e7c84;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links1 ul a{
+        display: block;
+    }
+    .nav-logo img{
+        max-height: 50px;
+        max-width: 50px;
+        margin-top: -15px;
+        margin-left: -5px;
+    }
+    .nav-links1 ul a {
+        color: rgb(2, 0, 0);
+        font-size: 20px;
+        padding: -10px 5px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    .nav-links1 ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 50px;
+        margin-left: -30px;
+    }
+    
+    .nav-links1 ul li::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: none;
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    .nav-logo1 img{
+        max-height: 50px;
+        max-width: 50px;
+        margin-top: -80px;
+        margin-left: -100px;
+    }
+    .logo1 { 
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -6px;
+        margin-right: -20px;
+    }
+    img .imglogo{
+        max-height: 50px;
+        max-width: 50px;
+    }
+    .log2 img{
+        float: none;
+       margin-top: 5px;
+       margin-right: 5px;
+       cursor: pointer;
+       cursor: pointer;
+    }
+    .price-guidelines1 {
+        margin-top: 80px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: block;
+        margin-bottom: 100px;
+    }
+    .section-container
+    {
+    flex-flow: wrap;
+    }
+    .section-container .columns.image1{
+    height: 250px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 19px;
+    margin-right: 19px;
+    }
+    .section-container .columns.image{
+    display:block;
+    order:1;
+    width:90%;
+    height:250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 19px;
+    margin-right: 19px;
+    }
+
+    .section-container .columns.content
+    {
+    display:block;
+    order:2;
+    width:100%;
+    }
+    .section-container .columns.content .content-container h5
+    {
+    font-weight:700;
+    font-size:25px;
+    margin-bottom:90px;
+    text-align: center;
+    }
+    .section-container .columns.content .content-container p
+    {
+    font-weight:400;
+    font-size:16px;
+    margin-bottom:20px;
+    margin-bottom:15px;
+    text-align:justify;
+    margin-top: -40px;
+    }
+}
+
+#login-form{
+    display: none;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin:2% auto;
+    background: #e0ba85;
+    border: 3px solid #6c4728;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    top: -40px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    color: white;
+}
+
+.input-group-register{
+    top: 90px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background: transparent;
+}
+
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+}
+
+input .submit-btn{
+    color: black;
+}
+#login{
+    left: 50px;
+}
+
+#login input {
+    color: #000;
+    font-size: 15;
+}
+
+#register{
+    left: 450px;
+}
+
+
+#register input .submit-btn{
+    color: black;
+    font-size: 15;
+}
+
+.log-out button{
+    height: 100%;
+    width: 10%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #954300;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+.log-out button:hover{
+    background: #9543007c;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}

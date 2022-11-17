@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html { 
+    overflow:scroll;
+  } 
+
+ .hero4{
+     height: 100vh;
+     background-image: url(../images/home.gif);
+     background-position: center;
+     background-size: cover;
+     overflow: scroll;
+     position: relative;
+     background-attachment: fixed; 
+     margin-bottom: -100px;
+ }
+ 
+ 
+ .navigation{
+     background-color: rgba(53, 9, 9, 0.418);
+     width: 1430px;
+     display: flex;
+     padding: 40px 120px;
+     height: 0px;
+     margin-top: -10px;
+     margin-left: -10px;
+ }
+ .navigation .fa{
+  display: none;
+  color: #fff;
+  margin: 10px 25px;
+  font-size: 22px;
+  cursor: pointer;
+}
+ .navigation a:hover, .drop:hover .dropdown-content {
+    background-color: #e0ba85;
+  }
+ .nav-links {
+     flex: 1;
+ }
+ .nav-links ul{
+    margin-left: -0px;
+     display: inline;
+ }
+ .nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 0px 25px;
+     margin-left: -20px;
+   
+ }
+ .nav-links ul a {
+    color: rgb(90, 54, 20);
+     font-size: 17px;
+     padding: 10px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+ .nav-links ul li::after{
+     content: '';
+     width: 0;
+     height: 2px;
+     display: block;
+     margin: auto;
+     transition: .5s;
+ }
+ .nav-links ul li:hover::after{
+     width: 100%;
+ }
+ 
+ 
+.pricelist1 img{
+   margin-left: 30%;
+   margin-right: 20%;
+   width: 600px;
+   height: 700px;
+}
+.pricelist2 img{
+    margin-left: 30%;
+    margin-right: 20%;
+    width: 600px;
+    height: 700px;
+ }
+
+.reseller {
+    color: rgb(116, 57, 57);
+}
+.reseller h1 {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    top: 105px;
+}
+.reseller a {
+   margin-right: 30%;
+   margin-left: 30%;
+}
+.res-guide p {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 70px;
+    background-color: #e0ba85;
+    padding: 20px 20px 20px;
+    border-radius: 50px;
+    border: solid 5px #72441b;
+}
+
+ .vertical-bar{
+     height: 100%;
+     background: rgb(246, 235, 235);
+     top: 0;
+     left: 0;
+     position: absolute;
+     display: none;
+ }
+ .logo {
+     font-size: 35px;
+     max-height: 50px;
+     margin-left: -55px;
+     margin-top: -20px;
+ }
+ 
+
+ .log{
+     float: right;
+     margin-right: 110px;
+     margin-top: -110px;
+ 
+ }
+
+ .nav-logo img{
+     max-height: 50px;
+     max-width: 50px;
+     margin-top: -25px;
+     margin-left: -110px;
+     color: #72441b;
+ }
+ 
+ .drop {
+    float: right;
+    margin-right: 40px;
+    margin-top: -50px;
+    cursor: pointer;
+  }
+  
+  .drop .dropdown-content {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 5px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-left: -45px;
+    margin-top: -2px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #6c4728;
+    color: #e0ba85;
+  }
+  
+  .drop:hover .dropdown-content {
+    display: block;
+  }
+  .backBtn {
+    width: 100px;
+    left: 100px;
+    top: 100px;
+    background-color: #f4f4f4;
+    transition: all 0.4s ease;
+    position: fixed;
+    cursor: pointer;
+    margin-left: -50px;
+    margin-top: -10px;
+  }
+  
+  span.line {
+    bottom: auto;
+    right: auto;
+    top: auto;
+    left: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    left: 0px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+  }
+  
+  span.tLine {
+    top: 0px;
+  }
+  
+  span.mLine {
+    top: 13px;
+    opacity: 0;
+  }
+  
+  span.bLine {
+    top: 26px;
+  }
+  
+  .label {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    font-size: 1em;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .backBtn:hover a.label {
+    left: 25px
+  }
+  
+  .backBtn:hover span.line {
+    left: -10px;
+    height: 5px;
+    background-color: #72441b;
+  }
+  
+  .backBtn:hover span.tLine {
+    width: 25px;
+    transform: rotate(-45deg);
+    left: -15px;
+    top: 6px;
+  }
+  
+  .backBtn:hover span.mLine {
+    opacity: 1;
+    width: 30px;
+  }
+  
+  .backBtn:hover span.bLine {
+    width: 25px;
+    transform: rotate(45deg);
+    left: -15px;
+    top: 20px;
+  }
+  @media (max-width: 700px){
+    body {
+        margin: 0;
+    }
+   
+    .vertical-bar{
+        height: 100%;
+        background: rgb(246, 235, 235);
+        top: 0;
+        left: 0;
+        position: absolute;
+        
+    }
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h1{
+        font-size: 40px;
+        margin-bottom: 150px;
+    }
+    .navigation{
+        padding: 35px 20px;
+    }
+    .log img{
+        float: right;
+        overflow: hidden;
+        margin-left: 80px;
+        margin-top: 600px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        cursor: pointer;
+    }
+    .navigation .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navigation2 a:hover, .drop:hover .dropdown-content {
+        background-color: #e0ba85;
+      }
+    .nav-links{
+        height: 200vh;
+        width: 200px;
+        background: #7e7c84;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul a{
+        display: block;
+    }
+    .nav-logo img{
+        max-height: 50px;
+        max-width: 50px;
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+    .nav-links ul a {
+        color: rgb(2, 0, 0);
+        font-size: 20px;
+        padding: 10px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+   
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 50px;
+        margin-left: -30px;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: none;
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    .logo { 
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .log img{
+        float: none;
+       margin-top: 5px;
+       margin-right: -2px;
+       cursor: pointer;
+       color: #72441b;
+    }
+    .log{
+        float: right;
+        overflow: hidden;
+        margin-right: 110px;
+        margin-top: -110px;
+        cursor: pointer;
+    }
+  
+    .drop {
+
+        overflow: hidden;
+        margin-right: 80px;
+        margin-top: -45px;
+        cursor: pointer;
+      }
+      
+      .drop .dropdown-content {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 7px 5px;
+        background-color: inherit;
+        font-family: inherit;
+        margin-left: -40px;
+        margin-top: 10px;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #6c4728;
+      }
+      
+      .drop:hover .dropdown-content {
+        display: block;
+      }
+      .pricelist1 img{
+        margin-left: 10%;
+        margin-right: 40%;
+        width: 400px;
+        height: 700px;
+        margin-bottom: 10px;
+     }
+     .pricelist2 img{
+         margin-left: 10%;
+         margin-right: 40%;
+         width: 400px;
+         height: 700px;
+
+      }
+     
+     .reseller {
+         color: rgb(116, 57, 57);
+     }
+     .reseller h1 {
+         text-align: center;
+         font-size: 40px;
+         display: block;
+         margin-bottom: 50px;
+         margin-top: 60px;
+     }
+     .reseller a {
+        margin-right: 30%;
+        margin-left: 30%;
+     }
+     .res-guide p {
+         margin-top: 60px;
+         margin-left: 50px;
+         margin-right: 70px;
+         background-color: #e0ba85;
+         padding: 20px 20px 20px;
+         border-radius: 50px;
+         border: solid 5px #72441b;
+     }
+     .backBtn {
+        width: 100px;
+        left: 100px;
+        top: 100px;
+        background-color: #f4f4f4;
+        transition: all 0.4s ease;
+        position: fixed;
+        cursor: pointer;
+        margin-left: -70px;
+        margin-top: -30px;
+      }
+      
+      span.line {
+        bottom: auto;
+        right: auto;
+        top: auto;
+        left: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%;
+        left: 0px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+      }
+      
+      span.tLine {
+        top: 0px;
+      }
+      
+      span.mLine {
+        top: 13px;
+        opacity: 0;
+      }
+      
+      span.bLine {
+        top: 26px;
+      }
+      .label {
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.4s ease;
+        font-size: 1em;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      .backBtn:hover a.label {
+        left: 25px
+      }
+      
+      .backBtn:hover span.line {
+        left: -10px;
+        height: 5px;
+        background-color: #72441b;
+      }
+      
+      .backBtn:hover span.tLine {
+        width: 25px;
+        transform: rotate(-45deg);
+        left: -15px;
+        top: 6px;
+      }
+      
+      .backBtn:hover span.mLine {
+        opacity: 1;
+        width: 30px;
+      }
+      
+      .backBtn:hover span.bLine {
+        width: 25px;
+        transform: rotate(45deg);
+        left: -15px;
+        top: 20px;
+      }
+}
