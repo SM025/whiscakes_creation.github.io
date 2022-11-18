@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    /* padding: 0;
+    margin: 0; */
+    text-decoration: none;
+    /* list-style: none;
+    box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+   /* background-color: rgba(219, 179, 152, 0.733); */
+   background-image: url(../images/home.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.profile{
+    max-width: 600px;
+    width: 40%;
+    background: #e0ba85;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 70px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    margin-bottom: 100px;
+    display: block;
+}
+.profile .title1 {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 30px;
+}
+.profile .title1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #7e7c84;
+}
+.profile form .user-details1 {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   margin-left: 20%;
+   margin-right: 30%;
+}
+form .user-details1 .input-box1 {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details1 .input-box1 .details2 {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.payment1 {
+    margin-top: 30px;
+}
+.user-details1 .input-box1 .details3 {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+
+.user-details1 .input-box1 input {
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+.user-details1 .input-box1 input:focus,
+.user-details1 .input-box1 input:valid{
+    border-color: rgb(99, 44, 0);
+}
+
+.radio-container1 {
+    font-size: 15px;
+    padding: 8px;
+    display: inline-block;
+   margin-top: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+.radio-container1 label {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    padding-right: 32px;
+    background: transparent;
+    border: transparent;
+    display: inline-block;
+  }
+  
+.radio-container1 label:nth-last-child(1) {
+    padding-right: 0;
+  }
+  
+ .radio-container1 label::before {
+    content: "";
+    border: 2px solid #222;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: -4px 30px;
+    margin-left: 0;
+    border-radius: 50%;
+} 
+  
+ .radio-container1 label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+
+    left: 2px;
+    top: 8px;
+    margin: -4px 30px;
+    margin-left: 0;
+    border-radius: 50%;
+  
+    transition: all 0.4s;
+}
+  
+  input[type="radio"]:checked + label::after {
+    background: rgb(54, 49, 49);
+  }
+
+form .button1 {
+    height: 45px;
+    margin: 45px 200px;
+}
+.button1 {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background: #7e7c84;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  
+  .button1:hover {
+    background: #72441b;
+  }
+  
+  .button1:active {
+    background: #8a5527;
+  }
+  
+  .button__text,
+  .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }
+  
+#account .my-account {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.p1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+select #format {
+    width: 200px;
+   left: 50%;
+}
+
+@media (max-width: 700px){
+    .profile {
+        width: 80%;
+    }
+    .user-details1 .input-box1 input {
+        width: 260px;
+}
+    form {
+        padding-left: -100px;
+    }
+    form .button1 {
+        margin: auto;
+    }
+    .user-details1 .input-box1 .details2 {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+}
