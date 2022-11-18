@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My invoice form</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/invoice-form.css">
+    </head>
+
+    <body>
+
+        <button onClick="window.print()">
+            <span class="button__text">Print</span>
+            <span class="button__icon">
+                <ion-icon name="print-outline"></ion-icon>
+            </span>
+        </button>
+
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+        <div class="my-5 page">
+            <div class="p-5">
+                <section class="top-content bb d-flex justify-content-between">
+                    <div class="logo">
+                        <img src="images/wc-logo.png" alt="" class="img-fluid" width="30px" height="30px">
+                    </div>
+                    <div class="top-left">
+                        <div class="graphic-path">
+                            <p>Invoice</p>
+                        </div>
+                        <div class="position-relative">
+                            <p>Invoice No.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="store-user mt-5">
+                    <div class="col-10">
+                        <div class="row bb pb-3">
+
+                            <div class="col-7">
+                                <p>Shop,</p>
+                                <h2>Whiscakes Creation</h2>
+                                <p class="address"> 42 Camia St., Sgt. De Leon Ext. <br> Santolan, <br>Pasig City</p>
+                            </div>
+
+                            <div class="col-5">
+                                <p>Client,</p>
+                                <h2>Marie Jamine Mendoza</h2>
+                                <p class="address">Santolan, Pasig City</p>
+                            </div>
+                        </div>
+
+                        <div class="row extra-info pt-3">
+                            <div class="col-7">
+                                <p>Payment Method: Gcash</p>
+                                <p>Order Number: <span>#01</span></p>
+                            </div>
+                            <div class="col-5">
+                                <p>Deliver Date: <span>02-05-22; 2:30PM</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+              
+                <section class="product-area mt-4">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td>Item Description</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Event</p>
+                                           <p>Birthday</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Shape</p>
+                                           <p>Round</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>200.00</td>
+                                <td>1</td>
+                                <td>200.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Size</p>
+                                           <p>8x10</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 300.00</td>
+                                <td>-</td>
+                                <td>P 500.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Base</p>
+                                            <p>Moist Cake</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 300.00</td>
+                                <td>-</td>
+                                <td>P 500.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Base Flavor</p>
+                                            <p>Mocha</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 300.00</td>
+                                <td>-</td>
+                                <td>P 200.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Regular Filling</p>
+                                            <p>Chocolate</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 500.00</td>
+                                <td>-</td>
+                                <td>P 800.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mt-0 title">Cake Premium Filling</p>
+                                            <p>Ganache</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 600.00</td>
+                                <td>-</td>
+                                <td>P 600.00</td>
+                                </tr>
+                           
+                                        <tr>
+                                        <td>
+                                            <div class='media'>
+                                                <div class='media-body'>
+                                                    <p class='mt-0 title'>Desserts</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                   
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cupcake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 500.00</td>
+                                <td>4</td>
+                                <td>P 500.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cake pops
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 2.00</td>
+                                <td>0</td>
+                                <td>0</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Brownies
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 600.00</td>
+                                <td>2</td>
+                                <td>P 1200.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cookies
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 200.00</td>
+                                <td>2</td>
+                                <td>P 30.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Chocolate covered marshmallow pops
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 6770.00</td>
+                                <td>8</td>
+                                <td>P 89.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cookie Bars
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 80.00</td>
+                                <td>8</td>
+                                <td>P 890.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Mini Cake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 89.00</td>
+                                <td>3</td>
+                                <td>P 78.00</td>
+                                </tr>
+                          
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cake in a Cup
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 67.88</td>
+                                <td>8</td>
+                                <td>P 890.00</td>
+                                </tr>
+                           
+                                    <tr>
+                                    <td>
+                                        <div class='media'>
+                                            <div class='media-body'>
+                                                <p class='mt-0 title'>Bread and Pastries</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </tr>
+                              
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Cupcake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 78.00</td>
+                                <td>6</td>
+                                <td>P 900.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Mini Cake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 78.00</td>
+                                <td>3</td>
+                                <td>P 90.00</td>
+                                </tr>
+                           
+                            
+                           <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Mini Cake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 56.00</td>
+                                <td>4</td>
+                                <td>P 899.00</td>
+                                </tr>
+                           
+                                <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            &emsp;Mini Cake
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>P 788.00</td>
+                                <td>7></td>
+                                <td>P 89.00</td>
+                                </tr>
+                           
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="balance-info">
+                    <div class="row">
+                        <div class="col-8">
+                            <p class="m-0 font-weight-bold">Theme/Color Scheme (For custom products: cake and cupcake): </p>
+                            <p>BTS Purple</p>
+                        </div>
+                        <div class="col-4">
+                            <table class="table border-0 table-hover">
+                                <tr>
+                                    <td>Sub Total:</td>
+                                    <td>P <?php echo $subtotal;?></td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery fee:</td>
+                                    <td>P 50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Discount:</td>
+                                    <td>-P 800.00</td>
+                                </tr>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total:</td>
+                                        <td>P 9000.00 </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            
+               
+
+                            <!-- Signature -->
+                            <div class="col-12">
+                                <img src="signature.png" class="img-fluid" alt="">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cart BG -->
+                <img src="images/cart.jpg" class="img-fluid cart-bg" alt="">
+
+                <footer class="account">
+                    <hr>
+                
+                    <div class="social pt-3">
+                        <span class="pr-2">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>09999705956</span>
+                        </span>
+                        <span class="pr-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>whis.cake@gmail.com</span>
+                        </span>
+                        <span class="pr-2">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>bea.mendoza</span>
+                        </span>
+                        <span class="pr-2">
+                            <i class="fab fa-instagram"></i>
+                            <span>whiscakes2020</span>
+                        </span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Whiscakes Creation
+        </title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+            <link rel="stylesheet" href="css/Guidelines.css">
+            <link rel="stylesheet" href="css/css1.css">
+    </head>
+
+    <body>
+        <div class="hero1">
+            <div class="navigation2">
+                <div class="nav-logo">
+                    <img src="images/wc-logo.png" class = "imglogo">
+                </div>
+                    <label class="logo1">Whiscakes Creation</label>
+                        <div class="nav-links1" id="nav-links">
+                            <i class="fa fa-close" onclick="closeMenu()"></i>
+                                <ul>
+                                    <a href="index.php"><li>Home</li></a>
+                                    <a href="Guidelines.html" style="color: #ddd;"><li>Guidelines</li></a>
+                                    <a href="Gallery.html"><li>Gallery</li></a>
+                                    <a href="about.html"><li>About Us</li></a>
+                                    <a href="FAQS.html"><li>FAQs</li></a>
+                                </ul>
+                        </div>
+                            <i class="fa fa-bars" style="font-size: 40px;" onclick="showMenu()"></i>
+            </div>
+
+            <div class="log2">
+                <a onclick="document.getElementById('login-form').style.display='block'" style="width: fit-content; height: fit-content;"><img src="images/user-64.png" style="width: 30px; height: 30px;"></a>
+            </div>
+           
+          
+
+                <div id='login-form' class="'login-page">
+                    <div class="form-box">
+                        <span onclick="document.getElementById('login-form').style.display='none'" class="w4-button w4-display-topright">&times;</span>
+                        <div class='button-box'>
+                            <div id='btn'></div>
+                                <button type='button' onclick='login()' class='toggle-btn'>Login</button>
+                                <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                        </div>
+
+                        <form  method="post" action="php/login-exec.php" id='login' class='input-group-login'>
+                            <input type='text' class='input-field' placeholder='Email Address' name="email" required>
+                            <input type='password' class='input-field' placeholder='Enter Password' name="password" required>
+                        
+                            <input type='submit' class='submit-btn' value='Log in'>
+                        </form>
+
+                        <form  method='POST'  class='input-group-register' id="register" action='php/register.php'>
+                            <input type='text' class='input-field' name='fname' placeholder='First Name' required>
+                            <input type='text' class='input-field' name='lname' placeholder='Last Name' required>
+                            <input type='email' class='input-field' name='email' placeholder='Email Address' required>
+                            <input type='password' class='input-field' name='pw1' placeholder='Enter Password' required>
+                            <input type='password' class='input-field' name='pw2' placeholder='Confirm Password' required>
+
+                            <input type='submit' class='submit-btn' value='Register'>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="price-guidelines1">
+                    <div class="section-container">
+                        <div class="columns content">
+                            <div class="content-container" data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-duration="700">
+                                <div class="m-32">
+                                    <h5>Cake</h5>
+                                    <p>These prices are based on desserts with minimal designs. They are used as a guideline and will change based on the level of difficulty of your specific design requirements. Please contact us for more specific quote.</p>   
+                                </div>
+                                <div>
+                                    <a href="guidelines-cake.html"><button class="btn-cake">Price Guidelines</button></a></div>
+                            </div>
+                            <div class="columns image1" style="background-image:url('images/bday1.jpg')">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section-container">
+                        <div class="columns image" style="background-image:url('images/cupcake1.jpg')">
+                            &nbsp;
+                        </div>
+                        <div class="columns content">
+                            <div class="content-container" data-aos="fade-left"
+                                data-aos-anchor="#example-anchor"
+                                data-aos-offset="700"
+                                data-aos-duration="700">
+                                    <h5>Desserts</h5>
+                                    <p>These prices are based on desserts with minimal designs. They are used as a guideline and will change based on the level of difficulty of your specific design requirements. Please contact us for more specific quote.</p>
+                            </div>
+                            <div>
+                                <a href="guidelines-desserts.html"><button class="btn-desserts">Price Guidelines</button></a></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+          
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            $("a").click(function(){
+                $("a").css("background-color","");
+                $(this).css("background-color","rgba(129, 103, 95, 0.931)");
+            });
+        </script>
+
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu() {
+                show.style.right = "0"
+            }
+            function closeMenu() {
+                show.style.right = "-200px"
+            }
+        </script>
+
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+                {
+                    x.style.left='-400px';
+                    y.style.left='50px';
+                    z.style.left='110px';
+                }
+            function login()
+                {
+                    x.style.left='50px';
+                    y.style.left='450px';
+                    z.style.left='0px';
+                }
+        </script>
+
+        <script>
+            var modal = document.getELementById('login-form');
+            window.onclick = function(event)
+            {
+                if (event.target == modal)
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <script>
+            AOS.init({
+                duration: 3000,
+                once: false,
+            });
+        </script>
+
+    </body>
+</html>

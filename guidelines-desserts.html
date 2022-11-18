@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Whiscakes Creation
+        </title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rampart+One&display=swap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Quicksand:wght@300;400;700&family=Rampart+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="navigation">
+                <div class="nav-logo">
+                    <img src="images/wc-logo.png" class = "imglogo">
+                </div>
+                    <label class="logo">Whiscakes Creation</label>
+                       <div class="nav-links" id="nav-links">
+                           <i class="fa fa-close" onclick="closeMenu()"></i>
+                                <ul>
+                                    <a href="index.php"><li>Home</li></a>
+                                    <a href="Guidelines.html" style="color: #ddd;"><li>Guidelines</li></a>
+                                    <a href="Gallery.html"><li>Gallery</li></a>
+                                    <a href="about.html"><li>About Us</li></a>
+                                    <a href="FAQS.html"><li>FAQ</li></a>
+                                </ul>
+                       </div>
+                            <i class="fa fa-bars" style="font-size: 40px;" onclick="showMenu()"></i>
+            </div>
+
+            <div class="backBtn">
+                <span class="line tLine"></span>
+                <span class="line mLine"></span>
+                <a class="label" href="Guidelines.html">Back</a>
+                <span class="line bLine"></span>
+            </div>
+                  
+            <div class="guidelines-desserts">
+                <div class="heading-text">
+                    <h1>Price per dozen</h1>
+                        <div class="body-text">
+                                <p>Cupcake --------------------------------------------------------  30.00</p>
+                                <p>Cake pops ------------------------------------------------------  35.00</p>
+                                <p>Brownies bites -------------------------------------------------  25.00</p>
+                                <p>Cookies --------------------------------------------------------  40.00</p>
+                                <p>Chocolate covered marshmallow pops -----------------------------  20.00</p>
+                                <p>Cookie bars ----------------------------------------------------  20.00</p>
+                            <h1>Price per box</h1>
+                                <p>Banana breads --------------------------------------------------  100.00</p>
+                                <p>Egg pie --------------------------------------------------------  120.00</p>
+                                <p>Choco Egg pie --------------------------------------------------------150.00</p>
+                                <p>Banoffee pie --------------------------------------------------------  200.00</p>
+                                <p>Mini Cake --------------------------------------------------------  50.00</p>
+                            <h1>Price per cup</h1>
+                                <p>Cake in a Cup--------------------------------------------------------  15.00</p>
+                        </div>
+                </div>
+            </div>
+
+                    
+            <div class="body-text2">
+                <h2>- You must be logged in to shop and checkout -</h2>
+                    <h3><a onclick="document.getElementById('login-form').style.display='block'" style="width: fit-content; height: fit-content;">Login</a></h3>
+                        
+                            <div id='login-form' class="login-page">
+                                <div class="form-box">
+                                    <span onclick="document.getElementById('login-form').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <div class='button-box'>
+                                        <div id='btn'></div>
+                                            <button type='button' onclick='login()' class='toggle-btn'>Login</button>
+                                            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                                    </div>
+
+                                        <form method="post" action="php/login-exec.php" id='login' class='input-group-login'>
+                                            <input type='text' class='input-field' placeholder='Email Address' name="email" required>
+                                            <input type='password' class='input-field' placeholder='Enter Password' name="password" required>
+                                            
+                                            <input type='submit' class='submit-btn' value='Log in'>
+                                        </form>
+
+                                        <form  method='POST'  class='input-group-register' id="register" action='php/register.php'>
+                                            <input type='text' class='input-field' name='fname' placeholder='First Name' required>
+                                            <input type='text' class='input-field' name='lname' placeholder='Last Name' required>
+                                            <input type='email' class='input-field' name='email' placeholder='Email Address' required>
+                                            <input type='password' class='input-field' name='pw1' placeholder='Enter Password' required>
+                                            <input type='password' class='input-field' name='pw2' placeholder='Confirm Password' required>
+                                        
+                                            <br><input type='submit' class='submit-btn' value='Register'><br><br>
+                                        </form>
+                                </div>
+                            </div>
+            </div>
+        </div>
+
+
+        <div class="vertical-bar">
+            <i class="fa fa-th-list"></i>
+        </div>
+
+
+    
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+                {
+                    x.style.left='-400px';
+                    y.style.left='50px';
+                    z.style.left='110px';
+                }
+            function login()
+                {
+                    x.style.left='50px';
+                    y.style.left='450px';
+                    z.style.left='0px';
+                }
+        </script>
+
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu() {
+                show.style.right = "0"
+            }
+            function closeMenu() {
+                show.style.right = "-200px"
+            }
+        </script>
+
+    </body>
+</html>
